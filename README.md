@@ -24,18 +24,20 @@ Software requirements:
 * glob module: it is used to recover files or pathnames matching a specified pattern.
 * fnmatch: supplies function to match files having a specific pattern or filter files having a specific pattern.
 * collections: gives alternatives to create container data types such as lists, tuples and dictionaries.
-* itertools: supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon. 
+* itertools: supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
+If you do not have these libraries installed follow this procedure (https://numpy.org/install/): 
+conda install numpy...
 
-## Generation of the inputs and inputs required
+## Generation of the input files required
 Mandatory input files:
 * abundances of all species calculated with checkM;
-* the eggNOG annotations results;
+* the eggNOG-mapper annotations results;
 * the taxonomic assignments according to NCBI taxonomy.
 
 ## How to use 
 In order to use the code, the user has to follow the subsequent steps:
 * download the file "strim.py"
-* as default the output files are saved in "", to modify this option, open the file "strim.py" with an editor and insert the path in where the output files should be saved (at line number...)
+* as default the output files are saved in "./output/", to modify this option, open the file "strim.py" with an editor and insert the path in where the output files should be saved (at line number...)
 * change the columns names of the taxonomic assignments with the ones you have in your file containing the taxonomic assignments (e.g. column_list = ['average_Re1','average_Re2','average_Re3', 'average_Re4'] put the correct names between '')
 * from the directory where the file strim.py is saved run 'python3 strim.py'
 * the program will ask you a series of parameters as input:
@@ -43,12 +45,12 @@ In order to use the code, the user has to follow the subsequent steps:
   - the taxonomic level for the stratification step (species, genus, etc.)
 * the script will start by calculating KEGG orthologs/modules abundances for each sample;
 * when the abundances calculation step is ended, the stratification step begins.
-The computation time requested for a typical workflow with 100-200 genomes and 10-20 different conditions will be within minutes depending on the computer used.
+The computational time requested for a typical workflow with 100-200 genomes and 10-20 different conditions will be 5-20 minutes depending on the computer used.
 
 ## Output
 In the output folder, the following files will be saved:
 * two tabular files:
   - one defining the taxonomic assignment
   - one defining the abundances weighted fot the occurences for each metabolic function;
-* some images, each corresponding to the weighted abundances for each sample;
-* the stratification gives you back tabular files for each KEGG code analyzed.
+* image files, each corresponding to the weighted abundances for each sample;
+* the stratification analysis provides the tabular files for each KEGG code analyzed.
