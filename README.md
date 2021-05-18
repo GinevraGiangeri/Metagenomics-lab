@@ -1,5 +1,5 @@
 # Metagenomics-lab
-# **STRIM STRatification In Metagenomics**
+# **STRIM STRatification In Metagenomics** 
 
 ## Using STRIM
 
@@ -15,7 +15,7 @@ The code takes as input:
 and it enables to interbreed these information, giving as output the stratification of the taxonomies contributing to each function.
 
 ## Requirements
-In order to use the software, you will need:
+In order to use the software, you will need to import:
 * pandas: it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
 * numpy: it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
 * matplotlib.pyplot: it is a plotting library which enables to create static, animated or interactive plots and figures.
@@ -27,30 +27,29 @@ In order to use the software, you will need:
 
 ## Generation of the inputs and inputs required
 The inputs needed will be:
-* a file containing the abundances calculated with checkM
-* a file containing the eggNOG annotations
-* a file containing the taxonomic assignments with the NCBI classification
-Pay attention: if you used different tools to calculate the abundances or the annotations, you have to modify the code with the correct inputs (e.g. in the code, when you find '.annotations' you will need to change with the format you used to save your data)
+* the abundances calculated with checkM
+* the eggNOG annotations
+* the taxonomic assignments with the NCBI classification
 
 ## How to use 
 In order to use the code, the user will need to follow the subsequent steps:
 * download the file strim.py
-* open the file strim.py with a text editor and modify the paths, meaning the directories in which the files you are going to use are saved (e.g. every time you will have to save an output that is going to be generated 'examplefilename.to_csv', you will have to specify the path in which the file needs to be saved)
-* check to have all the files required 
-* change the columns names of the taxonomic assignment with the ones you have in your file containing the taxonomic assignments (e.g. column_list = ['average_Re1','average_Re2','average_Re3', 'average_Re4'] put the correct names between '')
-* open the terminal and enter in the directory where the file .py is saved
-* write 'python3 strim.py' and press the Enter key
-* the program will ask you a series of parameters as a input:
-  - the choice between KEGG orthologues and KEGG modules
-  - the taxonomic level desired for the stratifcation step
+* open the file strim.py with a text editor and modify the paths in which the files you need are saved (every time you will have to open a file or save an output that is going to be generated e.g.'examplefilename.to_csv', you will have to specify the path in which the file needs to be saved)
+* check if you have all the files required 
+* change the columns names of the taxonomic assignments with the ones you have in your file containing the taxonomic assignments (e.g. column_list = ['average_Re1','average_Re2','average_Re3', 'average_Re4'] put the correct names between '')
+* open the terminal and enter in the directory where the file strim.py is saved
+* run 'python3 strim.py'
+* the program will ask you a series of parameters as input:
+  - the choice between KEGG orthologs and KEGG modules
+  - the taxonomic level desired for the stratification step
 * the program will elaborate the data and will return a message on the screen every time it will end the abundances calculation of a defined sample
-* when the abundances calculation step is endend, the stratification step begins
-* at the end of the strtatification step, the program will return a message on the screen, inviting the user to check the results obtained, opening the directory in which the files have been saved.
+* when the abundances calculation step is ended, the stratification step begins
+* at the end of the stratification step, the program will return a message on the screen, inviting the user to check the results obtained.
 
 ## Output
-In the folder in which the user decided to save te outputs, the following output files should be found:
+In the folder in which you decided to save the outputs, the following output files should be found:
 * two tabular files:
   - one defining the taxonomic assignment
   - one defining the abundances weighted fot the occurences for each metabolic function
-  -  
-a questo punto l'utente dovrà entrare nella cartella in cui ha salvato i dati e qui potrà trovare i due file tabulari, uno che definisce il taxonomic assignment e uno che è il file delle abbondanze, una serie di foto ognuna delle quali corrisponderà alle tot weighted abundances per ogni campioni. la stratificazione restituisce file tabulari uno per ogni kegg code preso in esame
+* a series of pictures, each corresponding to the weighted abundances for each sample
+* the stratification gives you back tabular files for each KEGG code analyzed!
