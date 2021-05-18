@@ -1,6 +1,6 @@
 # Metagenomics-lab
 # **STRIM STRatification In Metagenomics** 
-
+![logo2prova](https://repository-images.githubusercontent.com/366718180/d5a34c80-b7d8-11eb-8ca3-0c163cefd5d6)
 ## Using STRIM
 
 ### Cite Us
