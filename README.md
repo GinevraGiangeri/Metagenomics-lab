@@ -7,12 +7,12 @@
 This code was developed as part of a project carried out during the course of Microbial Metagenomics (Molecular Biology Master Degree) at the University of Padova. The project was supervised by Prof. Stefano Campanaro and Dr. Arianna Basile.
 
 ## **Description**
-The STRIM code is useful to calculate the abundances weighted for the occurrencies for each metabolic function (e.g. a function identified in the KEGG database)and it allows to define the stratification of the taxonomies for every different function. In other words, the stratification of the taxonomies means that the code enables the user to determine which is the contribution of each taxa at different taxonomic level for each specific function. 
-The code takes as input:
-* the abundances of each species in a community of a particular sample, calculated with checkM 
-* the metabolic functions of each species of the community, annotated independently with eggNOG
-* the taxonomic assignments containing the NCBI classification 
-and it enables to interbreed these information, giving as output the stratification of the taxonomies contributing to each function.
+The STRIM code is useful to calculate the abundances weighted for the occurrencies for each metabolic function (e.g. a function identified in the KEGG database) and it allows to define the stratification of the taxonomies for every different function. In other words, the stratification of the taxonomies means that the code enables the user to determine which is the contribution of each taxon to each specific function.
+Mandatory input files:
+* relative abundance of each microbial species in a community of a particular sample, file format must corrspond to that obtained using checkM (vn.n.n) 
+* metabolic functions of each species of the community, annotated independently with eggNOG mapper (vn.n.n)
+* the taxonomic assignment of each species according to NCBI classification
+The script uses these information and it provides as output the stratification of the taxonomies contributing to each metabolic function.
 
 ## Requirements
 In order to use the software, you will need to import:
