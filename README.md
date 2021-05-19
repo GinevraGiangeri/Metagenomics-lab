@@ -26,7 +26,7 @@ Software requirements:
 * collections (version ): gives alternatives to create container data types such as lists, tuples and dictionaries.
 * itertools (itertools ): supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
 
-If you do not have these libraries installed follow these procedures:
+If you do not have these libraries installed, please follow these procedures:
 - (https://numpy.org/install/)
 - pandas
 - matplotlib.pyplot
