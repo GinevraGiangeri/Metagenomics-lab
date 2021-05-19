@@ -19,31 +19,24 @@ The script uses these information and it provides as output the abundance of the
 
 ## Requirements
 Software requirements:
-* pandas (version ): it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
-* numpy (version ): it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
-* matplotlib.pyplot (version ): it is a plotting library which enables to create static, animated or interactive plots and figures.
-* os module (version ): it enables the interaction between the user and the operating system.
-* glob module (version ): it is used to recover files or pathnames matching a specified pattern.
-* fnmatch (version ): supplies function to match files having a specific pattern or filter files having a specific pattern.
-* collections (version ): gives alternatives to create container data types such as lists, tuples and dictionaries.
-* itertools (itertools ): supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
+* pandas (version 1.2.4): it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
+* numpy (version 1.20.3 ): it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
+* matplotlib.pyplot (version 3.4.2 ): it is a plotting library which enables to create static, animated or interactive plots and figures.
+* os module (part of the Standard Library of Python 3): it enables the interaction between the user and the operating system.
+* glob module (part of the Standard Library of Python 3): it is used to recover files or pathnames matching a specified pattern.
+* fnmatch module (part of the Standard Library of Python 3): it supplies function to match files having a specific pattern or filter files having a specific pattern.
+* collections module (part of the Standard Library of Python 3): it gives alternatives to create container data types such as lists, tuples and dictionaries.
+* itertools module (part of the Standard Library of Python 3): it supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
+* argparse module (part of the Standard Library of Python 3):it simplifies the way to write user-friendly command-line interfaces.
 
 If you do not have these libraries installed, please follow these procedures:
-- (https://numpy.org/install/)
-- pandas
-- matplotlib.pyplot
-- os
-- glob
-- fnmatch
-- collections
-- itertools
+- pandas: https://pypi.org/project/pandas/
+- numpy: https://pypi.org/project/numpy/
+- matplotlib.pyplot: https://pypi.org/project/matplotlib/
 
 ## How to use 
 In order to use the code, the user has to follow the subsequent steps:
 * download the file "strim.py"
-* open the file with an editor and modify the paths to import the input files needed (lines 16, 27, 51)
-* as default the output files are saved in "/home/gabriele/Documents/Lab_metagenomics/Test...", to modify this option, open the file "strim.py" with an editor and insert the path where the output files should be saved (at lines 24, 48, 114, 171)
-* change the columns names of the taxonomic assignments with the ones you have in your file containing the taxonomic assignments (e.g. column_list = ['average_Re1','average_Re2','average_Re3', 'average_Re4'] put the correct names between '')
 * from the directory where the file strim.py is saved run 'python3 strim.py'
 * the program will ask you a series of parameters as input:
   - selection of the KEGG features you would like to analyze (KEGG orthologs or KEGG modules)
