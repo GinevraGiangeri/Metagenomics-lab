@@ -11,8 +11,8 @@ STRIM performes two analyses: (1) it calculates the abundance of each KEGG ortho
 
 ## Input files required
 Mandatory input files:
-* relative abundance of each microbial species in a community of a particular sample, file format must correspond to that obtained using checkM (tested with version 1.0.12);
-* metabolic functions of each species of the community, annotated independently with eggNOG mapper (tested with version 2.0.1-1);
+* the relative abundance of each microbial species in a community of a particular sample, file format must correspond to that obtained using checkM (tested with version 1.0.12);
+* the metabolic functions of each species of the community, annotated independently with eggNOG mapper (tested with version 2.0.1-1);
 * the taxonomic assignment of each species according to the NCBI classification.
 For more information on the files format see the example files provided.
 The script uses these information and it provides as output the abundance of the KEGG modules and the stratification of the taxonomies contributing to each metabolic function.
