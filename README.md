@@ -7,7 +7,7 @@
 This code was developed as part of a project carried out during the Microbial Metagenomics course (Molecular Biology Master Degree) at the University of Padova. The project was supervised by Prof. Stefano Campanaro and Dr. Arianna Basile.
 
 ## Description
-STRIM performes two analyses: (1) it calculates the abundance of each KEGG ortholog or module taking into account the relative abundance of species having that function and the number of genes that are part of the module (e.g. all the genes encoding a function according to the KEGG database, times the abundance of the species having that function). (2) It stratifies the taxonomies for each function; by doing this, STRIM calculates the contribution of each taxon to the KEGG orthologs/modules.
+STRIM performs two analyses: (1) it calculates the abundance of each KEGG ortholog or module taking into account the relative abundance of species having that function and the number of genes that are part of the module (e.g. all the genes encoding a function according to the KEGG database, times the abundance of the species having that function). (2) It stratifies the taxonomies for each function; by doing this, STRIM calculates the contribution of each taxon to the KEGG orthologs/modules.
 
 ## Input files required
 Mandatory input files:
