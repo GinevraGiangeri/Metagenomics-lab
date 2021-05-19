@@ -9,35 +9,46 @@ This code was developed as part of a project carried out during the Microbial Me
 ## **Description**
 STRIM performes two analyses: (1) it calculates the abundance of each KEGG ortholog or module taking into account the relative abundance of species having that function and the number of genes that are part of the module (e.g. all the genes encoding a function according to the KEGG database, times the abundance of the species having that function). (2) It stratifies the taxonomies for each function; by doing this, STRIM calculates the contribution of each taxon to the KEGG orthologs/modules.
 Mandatory input files:
-* relative abundance of each microbial species in a community of a particular sample, file format must corrspond to that obtained using checkM (tested with version 1.0.12);
+* relative abundance of each microbial species in a community of a particular sample, file format must correspond to that obtained using checkM (tested with version 1.0.12);
 * metabolic functions of each species of the community, annotated independently with eggNOG mapper (tested with version 2.0.1-1);
-* the taxonomic assignment of each species according to NCBI classification.
+* the taxonomic assignment of each species according to the NCBI classification.
 For more information on the files format see the example files provided.
 The script uses these information and it provides as output the abundance of the KEGG modules and the stratification of the taxonomies contributing to each metabolic function.
 
 ## Requirements
 Software requirements:
-* pandas: it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
-* numpy: it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
-* matplotlib.pyplot: it is a plotting library which enables to create static, animated or interactive plots and figures.
-* os module: it enables the interaction between the user and the operating system.
-* glob module: it is used to recover files or pathnames matching a specified pattern.
-* fnmatch: supplies function to match files having a specific pattern or filter files having a specific pattern.
-* collections: gives alternatives to create container data types such as lists, tuples and dictionaries.
-* itertools: supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
-If you do not have these libraries installed follow this procedure (https://numpy.org/install/): 
-conda install numpy...
+* pandas (version ): it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
+* numpy (version ): it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
+* matplotlib.pyplot (version ): it is a plotting library which enables to create static, animated or interactive plots and figures.
+* os module (version ): it enables the interaction between the user and the operating system.
+* glob module (version ): it is used to recover files or pathnames matching a specified pattern.
+* fnmatch (version ): supplies function to match files having a specific pattern or filter files having a specific pattern.
+* collections (version ): gives alternatives to create container data types such as lists, tuples and dictionaries.
+* itertools (itertools ): supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
+
+If you do not have these libraries installed follow these procedures:
+- (https://numpy.org/install/)
+- pandas
+- matplotlib.pyplot
+- os
+- glob
+- fnmatch
+- collections
+- itertools
+- 
+
 
 ## Generation of the input files required
 Mandatory input files:
 * abundances of all species calculated with checkM;
 * the eggNOG-mapper annotations results;
-* the taxonomic assignments according to NCBI taxonomy.
+* the taxonomic assignments according to the NCBI taxonomy.
 
 ## How to use 
 In order to use the code, the user has to follow the subsequent steps:
 * download the file "strim.py"
-* as default the output files are saved in "./output/", to modify this option, open the file "strim.py" with an editor and insert the path in where the output files should be saved (at line number...)
+* open the file with an editor and modify the paths to import the input files needed (lines 16, 27, 51)
+* as default the output files are saved in "/home/gabriele/Documents/Lab_metagenomics/Test...", to modify this option, open the file "strim.py" with an editor and insert the path where the output files should be saved (at lines 24, 48, 114, 171)
 * change the columns names of the taxonomic assignments with the ones you have in your file containing the taxonomic assignments (e.g. column_list = ['average_Re1','average_Re2','average_Re3', 'average_Re4'] put the correct names between '')
 * from the directory where the file strim.py is saved run 'python3 strim.py'
 * the program will ask you a series of parameters as input:
