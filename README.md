@@ -16,6 +16,7 @@ Mandatory input files:
 * the taxonomic assignment of each species according to the NCBI classification.
 For more information on the files format see the example files provided.
 The script uses these information and it provides as output the abundance of the KEGG modules and the stratification of the taxonomies contributing to each metabolic function.
+
 Note: all the input files must be placed in the same directory.
 
 ## Requirements
