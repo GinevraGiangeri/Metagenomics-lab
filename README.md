@@ -39,7 +39,7 @@ If you do not have these libraries installed, please follow these procedures:
 ## How to use 
 In order to use the code, the user has to follow the subsequent steps:
 * download the file "strim.py"
-* from the directory where the file strim.py is saved run 'python3 strim.py'
+* from the directory where the file strim.py is saved run 'python3 strim.py <input directory> <output directory>'
 * the program will ask you a series of parameters as input:
   - selection of the KEGG features you would like to analyze (KEGG orthologs or KEGG modules)
   - the taxonomic level for the stratification step (species, genus, etc.)
