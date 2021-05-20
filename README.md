@@ -1,4 +1,4 @@
-# Metagenomics-lab
+### Metagenomics-lab
 # **STRIM STRatification In Metagenomics** 
 ![logo2prova](https://repository-images.githubusercontent.com/366718180/d5a34c80-b7d8-11eb-8ca3-0c163cefd5d6)
 ## Using STRIM
@@ -21,15 +21,15 @@ Note: all the input files must be placed in the same directory.
 
 ## Requirements
 Software requirements:
-* pandas (version 1.2.4): it is a library which allows you to perform data analysis and manipulation, particularly it is useful for manipulating numerical tables and time series.
-* numpy (version 1.20.3 ): it is a library useful to manipulate large arrays and matrices and it offers high-level mathematical functions to work on these arrays.
-* matplotlib.pyplot (version 3.4.2 ): it is a plotting library which enables to create static, animated or interactive plots and figures.
-* os module (part of the Standard Library of Python 3): it enables the interaction between the user and the operating system.
-* glob module (part of the Standard Library of Python 3): it is used to recover files or pathnames matching a specified pattern.
-* fnmatch module (part of the Standard Library of Python 3): it supplies function to match files having a specific pattern or filter files having a specific pattern.
-* collections module (part of the Standard Library of Python 3): it gives alternatives to create container data types such as lists, tuples and dictionaries.
-* itertools module (part of the Standard Library of Python 3): it supplies functions to generate complex iterators. An iterator is an object that contains a countable number of values that you can pass through, meaning that the vaues can be iterated upon.
-* argparse module (part of the Standard Library of Python 3):it simplifies the way to write user-friendly command-line interfaces.
+* pandas (version 1.2.4)
+* numpy (version 1.20.3 )
+* matplotlib.pyplot (version 3.4.2 )
+* os module (part of the Standard Library of Python 3)
+* glob module (part of the Standard Library of Python 3)
+* fnmatch module (part of the Standard Library of Python 3)
+* collections module (part of the Standard Library of Python 3)
+* itertools module (part of the Standard Library of Python 3)
+* argparse module (part of the Standard Library of Python 3)
 
 If you do not have these libraries installed, please follow these procedures:
 - pandas: https://pypi.org/project/pandas/
