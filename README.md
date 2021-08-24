@@ -6,6 +6,13 @@
 ### Cite Us
 This code was developed as part of a project carried out during the Microbial Metagenomics course (Molecular Biology Master Degree) at the University of Padova. The project was supervised by Prof. Stefano Campanaro and Dr. Arianna Basile.
 
+###Authors contributions
+Gabriele Ghiotto and Arianna Basile developed the python script; 
+Ginevra Giangeri  and Annamaria Carlone created the github page, the manual and tested the script; 
+Stefano Campanaro conceived the idea of the software. 
+All the authors wrote the paper report.
+
+
 ## Description
 STRIM performs two analyses: (1) it calculates the abundance of each KEGG ortholog or module taking into account the relative abundance of species having that function and the number of genes that are part of the module (e.g. all the genes encoding a function according to the KEGG database, times the abundance of the species having that function). (2) It stratifies the taxonomies for each function; by doing this, STRIM calculates the contribution of each taxon to the KEGG orthologs/modules.
 
