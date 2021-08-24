@@ -6,11 +6,13 @@
 ### Cite Us
 This code was developed as part of a project carried out during the Microbial Metagenomics course (Molecular Biology Master Degree) at the University of Padova. The project was supervised by Prof. Stefano Campanaro and Dr. Arianna Basile.
 
-###Authors contributions
+### Authors contributions
 Gabriele Ghiotto and Arianna Basile developed the python script; 
 Ginevra Giangeri  and Annamaria Carlone created the github page, the manual and tested the script; 
 Stefano Campanaro conceived the idea of the software. 
+
 All the authors wrote the paper report.
+
 
 
 ## Description
